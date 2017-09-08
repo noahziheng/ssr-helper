@@ -160,10 +160,6 @@ conf@^1.2.0:
     pkg-up "^2.0.0"
     write-file-atomic "^2.3.0"
 
-connected-domain@^1.0.0:
-  version "1.0.0"
-  resolved "http://registry.npm.taobao.org/connected-domain/download/connected-domain-1.0.0.tgz#bfe77238c74be453a79f0cb6058deeb4f2358e93"
-
 core-util-is@1.0.2:
   version "1.0.2"
   resolved "http://registry.npm.taobao.org/core-util-is/download/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
@@ -595,12 +591,6 @@ pkg-up@^2.0.0:
   dependencies:
     find-up "^2.1.0"
 
-ps-node@^0.1.6:
-  version "0.1.6"
-  resolved "http://registry.npm.taobao.org/ps-node/download/ps-node-0.1.6.tgz#9af67a99d7b1d0132e51a503099d38a8d2ace2c3"
-  dependencies:
-    table-parser "^0.1.3"
-
 punycode@^1.4.1:
   version "1.4.1"
   resolved "http://registry.npm.taobao.org/punycode/download/punycode-1.4.1.tgz#c0d5a63b2718800ad8e1eb0fa5269c84dd41845e"
@@ -788,12 +778,6 @@ supports-color@^4.0.0:
   resolved "http://registry.npm.taobao.org/supports-color/download/supports-color-4.4.0.tgz#883f7ddabc165142b2a61427f3352ded195d1a3e"
   dependencies:
     has-flag "^2.0.0"
-
-table-parser@^0.1.3:
-  version "0.1.3"
-  resolved "http://registry.npm.taobao.org/table-parser/download/table-parser-0.1.3.tgz#0441cfce16a59481684c27d1b5a67ff15a43c7b0"
-  dependencies:
-    connected-domain "^1.0.0"
 
 through@^2.3.6:
   version "2.3.8"
