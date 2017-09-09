@@ -8,6 +8,7 @@ program
   .usage('[options] {command} ...')
   .command('welcome', 'show Welcome Message', {isDefault: true})
   .command('config [path]', 'set ssr python client\'s location')
+  .command('add', 'add a host mannually')
   .command('add [uri]', 'add a SSR URI')
   .command('connect', 'set the default host and connect it')
   .command('ls', 'list all hosts by group and you can view their config')
