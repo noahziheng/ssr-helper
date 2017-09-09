@@ -10,7 +10,7 @@
     "ssr": "bin/index.js",
     "ssr-subscribe": "bin/subscribe.js"
   },
-  "author": "allanguys",
+  "author": "noahziheng",
   "repository": {
     "type": "git",
     "url": "https://github.com/noahziheng/ssr-helper"
