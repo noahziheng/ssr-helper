@@ -1,4 +1,5 @@
 const shell = require('shelljs')
-let result = shell.exec('sudo rm /etc/profile.d/ssr-helper.sh')
-if (result.code !== 0) shell.echo('Failed!')
+let result = shell.exec('sudo systemctl disable ssr-helper')
+let result1 = shell.exec('sudo rm /etc/systemd/system/ssr-helper.service')
+if (result.code !== 0 || result1.code !== 0) shell.echo('Failed!')
 else shell.echo('Success!')
