@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
 const program = require('commander')
-const readPkgUp = require('read-pkg-up')
+const pkgInfo = require('../package.json')
 
 program
-    .version('v' + readPkgUp.sync().pkg.version)
+    .version('v' + pkgInfo.version)
     .usage('[options] {command} ...')
     .command('welcome', 'show Welcome Message', {isDefault: true})
     .command('config [path]', 'set ssr python client\'s location')
