@@ -8,7 +8,7 @@
   },
   "bin": {
     "ssr": "bin/index.js",
-    "ssr-subscribe": "bin/index.js"
+    "ssr-subscribe": "bin/subscribe.js"
   },
   "author": "allanguys",
   "repository": {
@@ -30,8 +30,8 @@
     "inquirer": "^3.0.6",
     "ora": "^1.2.0",
     "query-string": "^5.0.0",
-    "read-pkg-up": "^2.0.0",
-    "request": "^2.81.0",
-    "shelljs": "^0.7.8"
+    "shelljs": "^0.7.8",
+    "sync-request": "^4.1.0",
+    "then-request": "^4.1.0"
   }
 }
