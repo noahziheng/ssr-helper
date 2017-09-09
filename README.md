@@ -1,7 +1,9 @@
 # SSR Helper CLI
 一个命令行界面的ShadowsocksR助手工具
 English Document is on the way.Plz be patient~
+
 [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
+[![NPM](https://nodei.co/npm/ssr-helper.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/ssr-helper/)
 
 ## 声明
 
