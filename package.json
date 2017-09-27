@@ -1,6 +1,6 @@
 {
   "name": "ssr-helper",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A CLI Helper designed for Python port of ShadowsocksR",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "ssr": "bin/index.js",
     "ssr-subscribe": "bin/subscribe.js"
   },
-  "author": "noahziheng",
+  "author": "Noah Gao",
   "repository": {
     "type": "git",
     "url": "https://github.com/noahziheng/ssr-helper"
