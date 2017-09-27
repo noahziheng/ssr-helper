@@ -14,6 +14,7 @@ program
   .command('ls', 'list all hosts by group and you can view their config')
   .command('edit', 'list all hosts by group and you can edit their config')
   .command('rm', 'remove a host by list')
+  .command('clear', 'clear hosts by group')
   .command('start', 'start ssr local client and connect default host')
   .command('stop', 'stop ssr local client')
   .command('restart', 'restart ssr local client')
