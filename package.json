@@ -31,7 +31,6 @@
     "ora": "^1.2.0",
     "query-string": "^5.0.0",
     "shelljs": "^0.7.8",
-    "sync-request": "^4.1.0",
     "then-request": "^4.1.0"
   }
 }
