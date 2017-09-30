@@ -2,6 +2,10 @@
 
 const program = require('commander')
 const pkgInfo = require('../package.json')
+const Conf = require('conf')
+const config = new Conf()
+
+if(!config.has('servers')) config.set('servers', []) // Fix servers undefined problem
 
 program
   .version('v' + pkgInfo.version)
