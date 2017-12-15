@@ -1,6 +1,7 @@
 const Conf = require('conf')
 const config = new Conf()
 const defaultConfig = new Conf({configName: 'default'})
+const localConfig = new Conf({configName: 'local'})
 
 require('../lib/select')().then(res => {
   defaultConfig.store = res.servers[res.group][res.server]
@@ -15,12 +16,7 @@ require('../lib/select')().then(res => {
   defaultConfig.set('obfsparam', undefined)
   if (defaultConfig.get('protocolparam')) defaultConfig.set('protocol_param', defaultConfig.get('protocolparam'))
   defaultConfig.set('protocolparam', undefined)
-  defaultConfig.set({
-    local_address: '127.0.0.1',
-    local_port: 1080,
-    timeout: 300,
-    workers: 1
-  })
+  defaultConfig.set(localConfig.store)
   console.log(res.names[res.server].name + ' is set to default!')
   require('../lib/exec')('restart')
 })

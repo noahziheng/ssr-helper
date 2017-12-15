@@ -52,13 +52,14 @@ $ ssr config /home/noah/shadowsocksr
 现在您已经可以使用SSR Helper了，终端下运行 `ssr` 即可看到欢迎界面
 以下仅对常用命令做以介绍，详细的命令列表可运行 `ssr help` 查阅
 
-* `ssr config [path]` : 配置Python Client的路径
+* `ssr config [path]` : 配置Python Client的路径，**绝对路径**
 * `ssr add` : 手动添加服务器，具备友好的界面
 * `ssr add [uri]` : 使用SSR URI手动添加服务器到列表
 * `ssr connect` : 选择服务器连接并设置为默认服务器，具备友好的界面
 * `ssr ls` : 显示服务器信息，具备友好的界面
 * `ssr rm` : 从列表删除服务器，具备友好的界面（注：删除后连接不会中断，需运行 `connect` 命令重新连接）
 * `ssr edit` : 编辑服务器信息，具备友好的界面
+* `ssr local` : 编辑SSR本地服务信息，编辑后需要重新连接生效
 * `ssr start` : ShadowsocksR Python Client Daemon的 start 命令,启动连接，使用CLI配置的默认服务器
 * `ssr restart` : ShadowsocksR Python Client Daemon的 restart 命令，重新启动连接，使用CLI配置的默认服务器
 * `ssr stop` : ShadowsocksR Python Client Daemon的 stop 命令，停止服务，使用CLI配置的默认服务器
