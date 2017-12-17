@@ -1,6 +1,6 @@
 {
   "name": "ssr-helper",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A CLI Helper designed for Python port of ShadowsocksR",
   "main": "index.js",
   "scripts": {
