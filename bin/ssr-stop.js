@@ -1,1 +1,13 @@
-require('../lib/exec')('stop')
+const Program = require('commander')
+const Exec = require('../lib/exec')
+const Dynamic = require('../lib/dynamic')
+Program.option("-d, --dynamic", "Dynamic config file.for docker or other use")
+    .parse(process.argv)
+
+if (Program.dynamic) {
+    let config_file = Dynamic.getConfigFile();
+    Exec('stop', false, config_file.path)
+}
+else {
+    Exec('stop')
+}
