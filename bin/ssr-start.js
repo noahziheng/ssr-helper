@@ -8,7 +8,7 @@ Program.option("-d, --dynamic [filename]", "Dynamic config file.for docker or ot
 if (Program.dynamic) {
     if (Program.dynamic === true) {
         console.warn("please add filename option")
-        return;
+        process.exit()
     }
     let config_file = Dynamic.generateConfigFile(Program.dynamic);
     Exec('start', false, config_file.path)
