@@ -29,6 +29,7 @@
     "fs-extra": "^2.1.2",
     "iconv-lite": "^0.4.15",
     "inquirer": "^3.0.6",
+    "is-root": "^1.0.0",
     "ora": "^1.2.0",
     "query-string": "^5.0.0",
     "shelljs": "^0.7.8",
