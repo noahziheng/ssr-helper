@@ -18,6 +18,7 @@ English Document is on the way.Plz be patient~
 4. 在较新的Linux平台（Systemd）下支持开机自动启动服务
 5. 完善的SSR订阅功能支持
 6. 默认开启TCP FastOpen（Linux Kernel 3.7+）
+7. 测试延迟功能
 
 ## 安装
 
@@ -66,6 +67,7 @@ $ ssr config /home/noah/shadowsocksr
 * `ssr status` : 可查看 ShadowsocksR Python Client Daemon的 运行状态
 * `ssr startup` : 设置服务开机自启，仅在Systemd启动的Linux平台下有效
 * `ssr unstartup` : 关闭服务开机自启，仅在Systemd启动的Linux平台下有效
+* `ssr delay` : 测试服务器的延迟
 * `ssr-subscribe add [url]` : 添加新的SSR订阅地址
 * `ssr-subscribe ls` : 列出所有SSR订阅地址和他们的当前标号
 * `ssr-subscribe rm [label]` : 基于 `ssr-subscribe ls` 打印的标号删除SSR订阅地址
