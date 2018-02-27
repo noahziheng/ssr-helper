@@ -11,7 +11,7 @@ if (Program.dynamic) {
         process.exit()
     }
     let config_file = Dynamic.generateConfigFile(Program.dynamic);
-    Exec('start', false, config_file.path)
+    Exec('start', false, config_file.path, false)
 }
 else {
     Exec('start')
