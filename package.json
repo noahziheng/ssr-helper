@@ -4,7 +4,6 @@
   "description": "A CLI Helper designed for Python port of ShadowsocksR",
   "main": "index.js",
   "scripts": {
-    "commit-msg": "echo $HUSKY_GIT_PARAMS",
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "release": "standard-version",
     "pre-commit": "npm run lint",
