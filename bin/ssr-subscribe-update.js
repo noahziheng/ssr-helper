@@ -14,31 +14,33 @@ let list = config.get('subscribe')
 let i = list.length
 if (i === 0) console.error('Error: You havn\'t add any subscribe url!')
 
-program.option("-d, --direct", "Direct(without proxy)")
-  .option("-p, --proxy", "Through connected SSR proxy")
+program.option('-d, --direct', 'Direct(without proxy)')
+  .option('-p, --proxy', 'Through connected SSR proxy')
   .parse(process.argv)
 new Promise((resolve, reject) => {
-  if (program.proxy) return resolve(new SocksProxyAgent(socksaddress));
-  else if (program.direct) return resolve(false);
-  //interactive mode
-  else resolve(inquirer.prompt([
-    {
-      type: 'list',
-      name: 'proxy',
-      message: 'Do you want to update list through proxy?',
-      choices: [{
-        name: 'Direct(without proxy)',
-        value: 0
-      }, {
-        name: 'Through connected SSR proxy',
-        value: 1
-      }]
-    }
-  ]).then(function (answers) {
-    return answers.proxy ? new SocksProxyAgent(socksaddress) : false
-  }))
+  if (program.proxy) return resolve(new SocksProxyAgent(socksaddress))
+  else if (program.direct) return resolve(false)
+  // interactive mode
+  else {
+    resolve(inquirer.prompt([
+      {
+        type: 'list',
+        name: 'proxy',
+        message: 'Do you want to update list through proxy?',
+        choices: [{
+          name: 'Direct(without proxy)',
+          value: 0
+        }, {
+          name: 'Through connected SSR proxy',
+          value: 1
+        }]
+      }
+    ]).then(function (answers) {
+      return answers.proxy ? new SocksProxyAgent(socksaddress) : false
+    }))
+  }
 }).then(proxy => {
-  //fetch and update
+  // fetch and update
   while (i--) {
     const spinner = ora(chalk.green(chalk.green(list[i]))).start()
     request('GET', list[i], { agent: proxy })

@@ -8,11 +8,13 @@ const localConfig = new Conf({ configName: 'local' })
 
 if (!config.has('servers')) config.set('servers', []) // Fix servers undefined problem
 if (!config.has('default')) config.set('default', []) // Default set
-if (localConfig.size === 0) localConfig.store = {
-  local_address: '127.0.0.1',
-  local_port: 1080,
-  timeout: 300,
-  workers: 1
+if (localConfig.size === 0) {
+  localConfig.store = {
+    local_address: '127.0.0.1',
+    local_port: 1080,
+    timeout: 300,
+    workers: 1
+  }
 } // Local Config Default set
 
 program

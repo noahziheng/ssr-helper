@@ -4,6 +4,12 @@
   "description": "A CLI Helper designed for Python port of ShadowsocksR",
   "main": "index.js",
   "scripts": {
+    "commit-msg": "echo $HUSKY_GIT_PARAMS",
+    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "release": "standard-version",
+    "pre-commit": "npm run lint",
+    "pre-push": "npm prune",
+    "lint": "eslint --ext .js bin lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
@@ -20,7 +26,6 @@
     "node": ">=6.0.0"
   },
   "dependencies": {
-    "base64-js": "^1.2.1",
     "bluebird": "^3.5.0",
     "chalk": "^1.1.3",
     "commander": "^2.9.0",
@@ -35,5 +40,17 @@
     "shelljs": "^0.7.8",
     "socks-proxy-agent": "^3.0.1",
     "then-request": "^4.1.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^6.1.3",
+    "@commitlint/config-conventional": "^6.1.3",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "husky": "^0.14.3",
+    "standard-version": "^4.3.0"
   }
 }
