@@ -2,7 +2,7 @@
   "name": "ssr-helper",
   "version": "1.1.2",
   "description": "A CLI Helper designed for Python port of ShadowsocksR",
-  "main": "index.js",
+  "main": "ssr.js",
   "scripts": {
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "release": "standard-version",
@@ -12,8 +12,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "ssr": "bin/index.js",
-    "ssr-subscribe": "bin/subscribe.js"
+    "ssr": "bin/ssr.js",
+    "ssr-subscribe": "bin/ssr-subscribe.js"
   },
   "author": "Noah Gao",
   "repository": {
