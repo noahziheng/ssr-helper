@@ -1,4 +1,5 @@
 # SSR Helper CLI
+
 一个命令行界面的ShadowsocksR助手工具
 English Document is on the way.Plz be patient~
 
@@ -22,14 +23,18 @@ English Document is on the way.Plz be patient~
 
 ## 安装
 
-推荐通过 [yarn](https://yarnpkg.com/zh-Hans/) 安装：
+~~推荐通过 [yarn](https://yarnpkg.com/zh-Hans/) 安装：~~
+
+> 因上游相关 BUG，使用 yarn 安装可能出现 [`(1) does not exist` 问题](https://github.com/noahziheng/ssr-helper/issues/15)，暂时建议使用新版 npm 解决
+
 ```bash
-$ yarn global add ssr-helper
+yarn global add ssr-helper
 ```
+
 也可通过传统的 npm:
 
 ```bash
-$ npm install -g ssr-helper
+npm install -g ssr-helper
 ```
 
 ## 依赖配置
@@ -39,13 +44,13 @@ $ npm install -g ssr-helper
 您可以使用如ShadowosocksRR等新的分支版本，但基于稳定考虑仍推荐manyuser版本，可在Home目录下运行以下命令安装：
 
 ```bash
-$ git clone -b manyuser https://github.com/shadowsocksr-backup/shadowsocksr.git
+git clone -b manyuser https://github.com/shadowsocksr-backup/shadowsocksr.git
 ```
 
 然后将Python Client的路径配置进来（如您的Python Client安装在`/home/noah/shadowsocksr`）：
 
 ```bash
-$ ssr config /home/noah/shadowsocksr
+ssr config /home/noah/shadowsocksr
 ```
 
 ## 命令行使用
