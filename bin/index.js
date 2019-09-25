@@ -30,6 +30,7 @@ program
   .command('edit', 'list all hosts by group and you can edit their config')
   .command('local', 'edit SSR\'s local config, need reconnect after config')
   .command('rm', 'remove a host by list')
+  .command('pure', 'pure servers')
   .command('clear', 'clear hosts by group')
   .command('start', 'start ssr local client and connect default host')
   .command('stop', 'stop ssr local client')

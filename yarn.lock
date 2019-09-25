@@ -1811,6 +1811,11 @@ natural-compare@^1.4.0:
   resolved "http://registry.npm.taobao.org/natural-compare/download/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
 
+node-array@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.npm.taobao.org/node-array/download/node-array-0.0.7.tgz#fdbb63c49fcf2ae878a06fbec1597c9b37e14258"
+  integrity sha1-/btjxJ/PKuh4oG++wVl8mzfhQlg=
+
 normalize-package-data@^2.3.0, normalize-package-data@^2.3.2, normalize-package-data@^2.3.4, normalize-package-data@^2.3.5:
   version "2.5.0"
   resolved "http://registry.npm.taobao.org/normalize-package-data/download/normalize-package-data-2.5.0.tgz#e66db1838b200c1dfc233225d12cb36520e234a8"

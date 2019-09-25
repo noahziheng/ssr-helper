@@ -4,6 +4,7 @@
   "description": "A CLI Helper designed for Python port of ShadowsocksR",
   "main": "index.js",
   "scripts": {
+    "dev": "node ./ssr pure",
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "release": "standard-version",
     "pre-commit": "npm run lint",
@@ -34,6 +35,7 @@
     "iconv-lite": "^0.4.15",
     "inquirer": "^3.0.6",
     "is-root": "^1.0.0",
+    "node-array": "^0.0.7",
     "ora": "^1.2.0",
     "qrcode-terminal": "^0.12.0",
     "query-string": "^5.0.0",
