@@ -23,12 +23,7 @@ let count = 0;
 //   console.log(`check ${servers.length}, ok ${t.length}`);
 //   config.set("servers", t);
 // })();
-var a = [];
 
-// Prepare 1000 items for testing
-for (var i = 0; i < 1000; i++) {
-  a.push(i + 1);
-}
 // 多Works
 parallel.call(
   servers,
@@ -52,6 +47,6 @@ parallel.call(
   function() {
     console.log("**********************************");
     config.set("servers", t);
-    console.log('over!')
+    console.log("over!");
   }
 );

@@ -64,6 +64,7 @@ ssr config /home/noah/shadowsocksr
 * `ssr connect` : 选择服务器连接并设置为默认服务器，具备友好的界面
 * `ssr ls` : 显示服务器信息，具备友好的界面
 * `ssr rm` : 从列表删除服务器，具备友好的界面（注：删除后连接不会中断，需运行 `connect` 命令重新连接）
+* `ssr pure` : 校验所有服务器，顺便清除不可用的（运行一段时间后，config中服务器数量达到了几万个，实在是乱了）
 * `ssr edit` : 编辑服务器信息，具备友好的界面
 * `ssr local` : 编辑SSR本地服务信息，编辑后需要重新连接生效
 * `ssr start` : ShadowsocksR Python Client Daemon的 start 命令,启动连接，使用CLI配置的默认服务器
