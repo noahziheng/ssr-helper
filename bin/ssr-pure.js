@@ -1,4 +1,4 @@
-var Array = require("node-array");
+// var Array = require("node-array");
 const Conf = require("conf");
 const SsrNet = require("../lib/net");
 const parallel = require("../lib/parallel");
