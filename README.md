@@ -1,4 +1,4 @@
-# SSR Helper CLI
+# [DEPRECATED] SSR Helper CLI
 
 一个命令行界面的ShadowsocksR助手工具
 English Document is on the way.Plz be patient~
